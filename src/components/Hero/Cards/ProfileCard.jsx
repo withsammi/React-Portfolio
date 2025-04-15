@@ -60,7 +60,7 @@ const ProfileCard = () => {
             <span className="text-amber-600 mr-2">{text}</span> Developer{" "}
             <img src={Code} alt="CODE" className="w-6 h-6 ml-2 filter invert" />
           </h2>
-          <p className="text-gray-400 mb-5">
+          <p className="text-gray-400 mb-5 font-mono">
             Currently working on <span className="text-white">React</span>{" "}
             projects
           </p>

@@ -5,6 +5,7 @@ import Github from "../../../assets/Github.svg";
 import Linkdin from "../../../assets/Linkdin.svg";
 
 import Icon from "../../../assets/Icon.svg";
+import Skills from "../../../../Pages/Skills";
 
 const Center = () => {
   const [repoCount, setRepoCount] = useState(0);
@@ -60,7 +61,9 @@ const Center = () => {
       </NavLink>
 
       {/* Middle Section */}
-      <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-row rounded-4xl h-auto basis-3/5 mx-auto"></div>
+      <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-row rounded-4xl h-auto basis-3/5 mx-auto">
+      <Skills /></div>
+      
 
       {/* Profiles Section */}
       <div

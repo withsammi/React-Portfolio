@@ -1,42 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import photo from "../../../assets/PHOTO.jpg";
 import Code from "../../../assets/Code.svg";
 import Icon from "../../../assets/Icon.svg";
+import { useScrambleText } from "../../../utils/useScrambleText"; // adjust the path if needed
 
 const ProfileCard = () => {
-  const [text, setText] = useState("MERN");
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleHover = () => {
-    setIsHovering(true);
-    const originalText = "MERN";
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let iterations = 0;
-
-    const interval = setInterval(() => {
-      setText((prev) =>
-        prev
-          .split("")
-          .map((_, i) =>
-            i < iterations
-              ? originalText[i]
-              : characters[Math.floor(Math.random() * characters.length)]
-          )
-          .join("")
-      );
-
-      if (iterations >= originalText.length) {
-        clearInterval(interval);
-        setTimeout(() => {
-          setText(originalText);
-          setIsHovering(false);
-        }, 500);
-      }
-
-      iterations += 1 / 3;
-    }, 50);
-  };
+  const { text, handleHover } = useScrambleText("MERN");
 
   return (
     <NavLink to="/bio" className="block group">
@@ -61,8 +31,7 @@ const ProfileCard = () => {
             <img src={Code} alt="CODE" className="w-6 h-6 ml-2 filter invert" />
           </h2>
           <p className="text-gray-400 mb-5 font-mono">
-            Currently working on <span className="text-white">React</span>{" "}
-            projects
+            Currently working on <span className="text-white">React</span> projects
           </p>
           <div className="flex items-center text-white font-bold">
             <p className="text-gray-500 text-sm">Based in india</p>

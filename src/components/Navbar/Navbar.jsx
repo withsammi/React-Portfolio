@@ -61,12 +61,15 @@ const Navbar = () => {
           (item, i) => (
             <li
               key={i}
-              className="hover:text-white cursor-pointer transition duration-200 text-lg font-semibold"
+              className="cursor-pointer transition duration-200 text-lg font-semibold"
             >
               <NavLink
-                to={`/${item.toLowerCase()}`}
-                className={({ isActive }) =>
-                  isActive ? "text-white" : "text-gray-400"
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`} // Redirect "Home" to "/"
+                className={
+                  ({ isActive }) =>
+                    isActive
+                      ? "text-white" // White color when on the active page
+                      : "text-gray-400 hover:text-amber-500" // Amber-500 on hover
                 }
               >
                 {item}
@@ -74,15 +77,15 @@ const Navbar = () => {
             </li>
           )
         )}
-        <li className="flex items-center space-x-1 hover:text-white cursor-pointer">
+        <li className="flex items-center space-x-1 hover:text-amber-500 cursor-pointer">
           <FaLink />
           <span>Links</span>
         </li>
       </ul>
 
       {/* Lightbulb Icon with Glow Effect */}
-      <div className="relative cursor-pointer text-4xl mr-10">
-        <div className="absolute -inset-4 bg-gradient-to-r from-white to-white rounded-full blur-2xl opacity-75"></div>
+      <div className="relative cursor-pointer text-4xl mr10">
+        <div className="absolute -inset-1 bg-gradient-to-r from-white to-white rounded-full blur-2xl opacity-75"></div>
         <BsLightbulb className="relative text-white" />
       </div>
     </nav>

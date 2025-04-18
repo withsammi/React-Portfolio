@@ -13,6 +13,8 @@ import Cv from "./components/Pages/Cv"; // Corrected the import path
 import Bio from "./components/Bio/Bio";
 import Qualification from "./components/Qualification/Qualification";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
+import Links from "./components/Links/Links";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +24,8 @@ const router = createBrowserRouter(
       <Route path="Bio" element={<Bio />} />
       <Route path="qualification" element={<Qualification />} />
       <Route path="Portfolio" element={<Portfolio />} />
+      <Route path="Contact" element={<Contact />} />
+      <Route path="Links" element={<Links />} />
     </Route>
   )
 );

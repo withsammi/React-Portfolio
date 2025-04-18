@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Github from "../../../assets/Github.svg";
 import Linkdin from "../../../assets/Linkdin.svg";
-import Icon from "../../../assets/Icon.svg";
+import Icon from "../../../assets/icon.svg";
 
 const Profile = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import photo from "../../../assets/PHOTO.jpg";
 import Code from "../../../assets/Code.svg";
-import Icon from "../../../assets/Icon.svg";
+import Icon from "../../../assets/icon.svg";
 import { useScrambleText } from "../../../utils/useScrambleText"; // adjust the path if needed
 
 const ProfileCard = () => {

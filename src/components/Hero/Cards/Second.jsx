@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink
 import BookIcon from "../../../assets/credentials.png";
 import PortfolioIcon from "../../../assets/portfolio.png";
-import Icon from "../../../assets/Icon.svg";
+import Icon from "../../../assets/icon.svg";
 import Marquee from "./Marquee"; // Corrected the import path
 
 const Second = () => {

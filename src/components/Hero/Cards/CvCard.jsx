@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-import Icon from "../../../assets/Icon.svg";
+import Icon from "../../../assets/icon.svg";
 
 const CvCard = () => {
   const navigate = useNavigate(); // Initialize the navigate function

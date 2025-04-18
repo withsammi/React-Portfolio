@@ -29,7 +29,7 @@ const Cv = () => {
 
         {/* Right Section - Contact */}
         <div className="w-full md:w-1/2 text-center">
-          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4">
+          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4 ">
             CONTACT
           </h2>
           <GetInTouch />

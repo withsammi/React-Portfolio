@@ -42,7 +42,7 @@ const Second = () => {
           />
           <div className="flex">
             <p className="text-gray-400 text-sm font-mono mt-6 mr-5 text-center">
-              PORTFOLIO
+              Projects
             </p>
             <img
               src={Icon}

@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul className="hidden md:flex space-x-12 text-gray-400 uppercase">
-        {["Home", "Bio", "Portfolio", "Contact", "Certificates"].map(
+        {["Home", "Bio", "Projects", "Contact", "Certificates"].map(
           (item, i) => (
             <li
               key={i}

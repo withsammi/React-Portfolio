@@ -82,7 +82,7 @@ const GetInTouch = () => {
 
       {/* Social Links */}
       <motion.div
-        className="flex justify-center space-x-3 md:space-x-4 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] p-5 m-5 rounded-"
+        className="flex justify-center space-x-3 md:space-x-4 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] p-5 m-5 rounded-4xl"
         variants={centerVariants}
         initial="hidden"
         whileInView="visible"
@@ -98,7 +98,7 @@ const GetInTouch = () => {
           <img
             src={Github}
             alt="Github"
-            className="w-6 h-6 md:w-8 md:h-8 transition-all duration-300 group-hover:invert group-hover:opacity-100 opacity-50"
+            className="w-6 h-6 invert md:w-8 md:h-8 transition-all duration-300 group-hover:invert group-hover:opacity-100 opacity-50"
           />
         </NavLink>
 
@@ -112,7 +112,7 @@ const GetInTouch = () => {
           <img
             src={Linkdin}
             alt="LinkedIn"
-            className="w-6 h-6 md:w-8 md:h-8 transition-all duration-300 group-hover:invert group-hover:opacity-100 opacity-50"
+            className="w-6 h-6 invert md:w-8 md:h-8 transition-all duration-300 group-hover:invert group-hover:opacity-100 opacity-50"
           />
         </NavLink>
       </motion.div>

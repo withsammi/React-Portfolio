@@ -12,7 +12,7 @@ import Hero from "./components/Hero/Hero";
 import Cv from "./components/Pages/Cv"; // Corrected the import path
 import Bio from "./components/Bio/Bio";
 import Qualification from "./components/Qualification/Qualification";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Links from "./components/Links/Links";
 
@@ -23,7 +23,7 @@ const router = createBrowserRouter(
       <Route path="cv" element={<Cv />} />
       <Route path="Bio" element={<Bio />} />
       <Route path="qualification" element={<Qualification />} />
-      <Route path="Portfolio" element={<Portfolio />} />
+      <Route path="projects" element={<Projects />} />
       <Route path="Contact" element={<Contact />} />
       <Route path="Links" element={<Links />} />
     </Route>

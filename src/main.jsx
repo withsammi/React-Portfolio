@@ -7,7 +7,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./layout";
+import Layout from "./Layout";
 import Hero from "./components/Hero/Hero";
 import Cv from "./components/Pages/Cv"; // Corrected the import path
 import Bio from "./components/Bio/Bio";

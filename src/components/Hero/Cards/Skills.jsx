@@ -3,7 +3,7 @@ import Html from "../../../assets/Html.svg";
 import Css from "../../../assets/Css.svg";
 import Javascript from "../../../assets/Javascript.svg";
 import Ejs from "../../../assets/Ejs.svg";
-import ReactLogo from "../../../assets/React.svg";
+import ReactLogo from "../../../assets/react.svg";
 import Tailwind from "../../../assets/Tailwind.svg";
 import Bootstrap from "../../../assets/Bootstrap.svg";
 import Git from "../../../assets/Git.svg";

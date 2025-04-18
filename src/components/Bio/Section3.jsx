@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../../assets/Icon.svg";
+import Icon from "../../assets/icon.svg";
 import { NavLink } from "react-router-dom";
 import Signature from "../../assets/Signature.png";
 import Icon2 from "../../assets/icon2.png";

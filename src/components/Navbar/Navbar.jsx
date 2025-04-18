@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Logo + Hamburger */}
       <div className="flex items-center justify-between w-full md:w-auto">
         <NavLink to="/" className="flex items-center space-x-3">
-          <h1 className="text-3xl md:text-8xl font-bold text-purple-500 tracking-wide">AR</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-purple-500 tracking-wide">AR</h1>
         </NavLink>
 
         <button onClick={toggleMenu} className="md:hidden text-white text-3xl">

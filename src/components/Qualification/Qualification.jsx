@@ -7,8 +7,20 @@ import instagram from "../../assets/instagram.svg";
 import leetcode from "../../assets/leetcode.svg";
 import { motion } from "framer-motion";
 import { centerVariants } from "../../Animations/motionVariants";
+import { useScrambleText } from "../../utils/useScrambleText";
 
 const Qualification = () => {
+  // Create scramble text hooks for each skill with varied timing
+  const reactScramble = useScrambleText("React.js", 40, 800);
+  const tailwindScramble = useScrambleText("TailwindCSS", 35, 600);
+  const htmlScramble = useScrambleText("HTML", 30, 400);
+  const cssScramble = useScrambleText("CSS", 30, 400);
+  const jsScramble = useScrambleText("JavaScript", 45, 700);
+  const nodeScramble = useScrambleText("Node", 25, 500);
+  const expressScramble = useScrambleText("Express", 35, 600);
+  const sqlScramble = useScrambleText("PostgreSQL", 50, 800);
+  const cppScramble = useScrambleText("C++", 20, 300);
+
   return (
     <div className="flex flex-col lg:flex-row m-4 sm:m-6 md:m-8 lg:m-10 gap-8 md:gap-12 lg:gap-20">
       <div className="w-full lg:w-1/3 h-fit lg:sticky lg:top-10 text-white bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] rounded-4xl mb-8 lg:mb-0">
@@ -204,8 +216,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                React.js
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={reactScramble.handleHover}
+              >
+                {reactScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Built a responsive Portfolio and Codetrac platform
@@ -220,8 +235,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                TailwindCSS
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={tailwindScramble.handleHover}
+              >
+                {tailwindScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Built a portfolio website with the implemenation of react and
@@ -237,8 +255,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                HTML
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={htmlScramble.handleHover}
+              >
+                {htmlScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Strong grasp and used in several projects
@@ -253,8 +274,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                CSS
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={cssScramble.handleHover}
+              >
+                {cssScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Strong grasp used in several projects
@@ -269,8 +293,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                JavaScript
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={jsScramble.handleHover}
+              >
+                {jsScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Used in various projects to make them dynamic
@@ -285,8 +312,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                Node
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={nodeScramble.handleHover}
+              >
+                {nodeScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Experience of 1+ years
@@ -301,8 +331,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                Express
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={expressScramble.handleHover}
+              >
+                {expressScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Used in various projects
@@ -317,8 +350,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                PostgreSQL
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={sqlScramble.handleHover}
+              >
+                {sqlScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Used in various projects for database management
@@ -333,8 +369,11 @@ const Qualification = () => {
               }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-lg md:text-xl text-blue-400 font-medium mb-2">
-                C++
+              <h3
+                className="text-lg md:text-xl text-blue-400 font-medium mb-2"
+                onMouseEnter={cppScramble.handleHover}
+              >
+                {cppScramble.text}
               </h3>
               <p className="text-gray-300 leading-relaxed text-base">
                 Solved over 150+ DSA questions

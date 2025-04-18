@@ -75,7 +75,7 @@ const Experience = () => {
         onViewportLeave={() => setTriggerCard3(false)} // Reset trigger when leaving viewport
       >
         <h1 className="text-3xl md:text-4xl font-bold">
-          {useScrambleEffect("25+", 2000, triggerCard3)}
+          {useScrambleEffect("25+", 1500, triggerCard3)}
         </h1>
         <p className="text-xs md:text-sm mt-2">TECHNICAL SKILLS</p>
       </motion.div>

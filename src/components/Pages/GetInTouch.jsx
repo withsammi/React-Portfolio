@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import motion for animations
-import { centerVariants } from "../src/Animations/motionVariants"; // Import centerVariants
+import { centerVariants } from "../../Animations/motionVariants"; // Import centerVariants
 import { NavLink } from "react-router-dom";
-import Github from "../src/assets/Github.svg";
-import Linkdin from "../src/assets/Linkdin.svg";
+import Github from "../../assets/Github.svg";
+import Linkdin from "../../assets/Linkdin.svg";
 
 const GetInTouch = () => {
   return (
@@ -31,7 +31,7 @@ const GetInTouch = () => {
           </a>
         </div>
         <div className="bg-gradient-to-br from-[rgb(13,13,13)] to-[rgb(52,52,52)] p-4 rounded-4xl">
-        <img src="/Mail.svg" alt="Mail logo" className="w-12 h-12 invert" />
+          <img src="/Mail.svg" alt="Mail logo" className="w-12 h-12 invert" />
         </div>
       </motion.div>
 
@@ -49,7 +49,7 @@ const GetInTouch = () => {
           </a>
         </div>
         <div className="bg-gradient-to-br from-[rgb(13,13,13)] to-[rgb(52,52,52)] p-4 rounded-4xl">
-          <img src='/Call.svg' alt="Call logo" className="w-12 h-12 invert" />
+          <img src="/Call.svg" alt="Call logo" className="w-12 h-12 invert" />
         </div>
       </motion.div>
 
@@ -68,12 +68,12 @@ const GetInTouch = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Location
+            GREATER NOIDA [PIN-201310] INDIA
           </a>
         </div>
         <div className="bg-gradient-to-br from-[rgb(13,13,13)] to-[rgb(52,52,52)] p-4 rounded-4xl">
           <img
-            src='/Location1.svg'
+            src="/Location1.svg"
             alt="Location logo"
             className="w-12 h-12 invert"
           />
@@ -82,7 +82,7 @@ const GetInTouch = () => {
 
       {/* Social Links */}
       <motion.div
-        className="flex justify-center space-x-3 md:space-x-4"
+        className="flex justify-center space-x-3 md:space-x-4 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] p-5 m-5 rounded-"
         variants={centerVariants}
         initial="hidden"
         whileInView="visible"

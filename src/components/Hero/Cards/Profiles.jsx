@@ -6,14 +6,14 @@ import Icon from "../../../assets/Icon.svg";
 
 const Profile = () => {
   return (
-    <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-col justify-between rounded-2xl md:rounded-4xl p-4 md:p-6 w-full md:w-1/5 group transition-all duration-300 hover:shadow-lg">
+    <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-col justify-between rounded-2xl md:rounded-4xl p-4 md:p-6 md:w-1/5 group transition-all duration-300 hover:shadow-lg">
       <div className="bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-2xl md:rounded-4xl p-2 md:p-4">
         <div className="flex justify-center space-x-3 md:space-x-4">
           <NavLink
             to="https://github.com/withsammi"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] p-2 md:p-3 rounded-full hover:bg-gray-700 transition-all duration-300"
+            className="p-2 md:p-3 rounded-full hover:scale-110 transition-all duration-300"
           >
             <img
               src={Github}
@@ -25,7 +25,7 @@ const Profile = () => {
             to="https://linkedin.com/in/withsammi"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] p-2 md:p-3 rounded-full hover:bg-gray-700 transition-all duration-300"
+            className="p-2 md:p-3 rounded-full hover:scale-110 transition-all duration-300"
           >
             <img
               src={Linkdin}

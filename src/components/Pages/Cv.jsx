@@ -1,4 +1,4 @@
-import { useScrambleText } from "../src/utils/useScrambleText";
+import { useScrambleText } from "../../utils/useScrambleText";
 import GetInTouch from "./GetInTouch";
 
 const Cv = () => {
@@ -17,7 +17,9 @@ const Cv = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Section - PDF Viewer */}
         <div className="w-full md:w-1/2 text-center mb-8 md:mb-0">
-          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4">MY CV</h2>
+          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4">
+            MY CV
+          </h2>
           <iframe
             src="/Aditya's CV.pdf#zoom=75"
             className="w-full h-[600px]"
@@ -27,7 +29,9 @@ const Cv = () => {
 
         {/* Right Section - Contact */}
         <div className="w-full md:w-1/2 text-center">
-          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4">CONTACT</h2>
+          <h2 className="text-2xl text-white mask-linear-from-neutral-800 mb-4">
+            CONTACT
+          </h2>
           <GetInTouch />
         </div>
       </div>

@@ -47,7 +47,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-7 grid-rows-3 gap-4 p-4">
+    <div className="grid grid-cols-7 grid-rows-3 gap-4 p-4 hover:cursor-pointer">
       {skills.map((skill, index) => (
         <div
           key={index}

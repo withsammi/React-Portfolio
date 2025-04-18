@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom"; // Import NavLink
 import BookIcon from "../../../assets/credentials.png";
 import PortfolioIcon from "../../../assets/portfolio.png";
 import Icon from "../../../assets/Icon.svg";
@@ -11,7 +12,10 @@ const Second = () => {
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-6">
         {/* First Icon Section */}
-        <div className="w-full md:w-1/2 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-4xl p-4 flex flex-col items-center group">
+        <NavLink
+          to="/qualification" // Redirect to Qualification page
+          className="w-full md:w-1/2 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-4xl p-4 flex flex-col items-center group transition-all duration-300 hover:shadow-lg"
+        >
           <img
             src={BookIcon}
             alt="Book"
@@ -27,7 +31,7 @@ const Second = () => {
               className="w-15 h-15 ml-7 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ease-in-out"
             />
           </div>
-        </div>
+        </NavLink>
 
         {/* Second Icon Section */}
         <div className="w-full md:w-1/2 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-4xl p-4 flex flex-col items-center group">

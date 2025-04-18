@@ -49,26 +49,27 @@ const Navbar = () => {
       <div className="flex items-center space-x-3">
         <NavLink to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="w-12 h-12 cursor-pointer" />
-        </NavLink>
-        <span className="text-3xl font-bold text-gray-500 tracking-wide">
+          <h1 className="text-3xl font-bold text-gray-500 tracking-wide ml-4">
           AR
-        </span>
+        </h1>
+        </NavLink>
+        
       </div>
 
       {/* Navigation Links */}
-      <ul className="hidden md:flex space-x-12 text-gray-400">
+      <ul className="hidden md:flex space-x-12 text-gray-400 uppercase">
         {["Home", "Bio", "Portfolio", "Contact", "Certificates"].map(
           (item, i) => (
             <li
               key={i}
-              className="cursor-pointer transition duration-200 text-lg font-semibold"
+              className="cursor-pointer transition duration-200 text-lg font-semibold hover:scale-125"
             >
               <NavLink
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`} // Redirect "Home" to "/"
                 className={
                   ({ isActive }) =>
                     isActive
-                      ? "text-white" // White color when on the active page
+                      ? "text-blue-500" // White color when on the active page
                       : "text-gray-400 hover:text-amber-500" // Amber-500 on hover
                 }
               >

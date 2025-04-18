@@ -1,16 +1,12 @@
 import React from "react";
-import logo from '../../assets/Molecule.svg';
 
 const Footer = () => {
   const navLinks = [
     { name: "HOME", path: "/" },
     { name: "BIO", path: "/bio" },
-    { name: "PORTFOLIO", path: "/portfolio" },
+    { name: "Projects", path: "/Projects" },
     { name: "CONTACT", path: "/contact" },
     { name: "CERTIFICATES", path: "/certificates" },
-    { name: "CV", path: "/cv" },
-    { name: "OFFERINGS", path: "/offerings" },
-    { name: "INSIGHTS", path: "/insights" }
   ];
 
   const socialLinks = [
@@ -25,11 +21,7 @@ const Footer = () => {
         {/* Logo and Name */}
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center">
-            <img 
-              src={logo} 
-              alt="Aditya Rai Logo" 
-              className="h-10 w-10 mr-3"
-            />
+            
             <h1 className="text-3xl font-bold text-gray-500">Aditya Rai</h1>
           </div>
           

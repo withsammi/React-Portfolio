@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import ProfileCard from "../Hero/Cards/ProfileCard";
@@ -8,11 +7,10 @@ import Second from "./Cards/Second";
 import Center1 from "./Cards/Center";
 import { centerVariants } from "../../Animations/motionVariants";
 
-
 const Hero = () => {
   return (
-    <div className="flex flex-col min-h-screen p-5 md:p-10 lg:p-15">
-      <div className="flex flex-col lg:flex-row gap-6 flex-grow p-4">
+    <div className="flex flex-col min-h-screen px-5 py-5 md:p-10 lg:p-15"> {/* Adjusted to remove margin and set padding */}
+      <div className="flex flex-col lg:flex-row gap-6 flex-grow mx-5 md:p-4">
         <div className="w-full lg:w-1/2">
           <ProfileCard />
         </div>
@@ -22,7 +20,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="flex flex-col md:flex-row gap-4 flex-grow p-4"
+        className="flex flex-col md:flex-row gap-4 flex-grow mx-5 md:p-4"
         variants={centerVariants}
         initial="hidden"
         whileInView="visible"
@@ -33,7 +31,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="flex flex-col md:flex-row gap-4 p-4"
+        className="flex flex-col md:flex-row gap-4 mx-5 md:p-4"
         variants={centerVariants}
         initial="hidden"
         whileInView="visible"

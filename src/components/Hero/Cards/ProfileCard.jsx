@@ -10,8 +10,8 @@ const ProfileCard = () => {
   const { text, handleHover } = useScrambleText("MERN");
 
   return (
-    <NavLink to="/bio" className="block group">
-      <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-row rounded-4xl h-auto w-auto mx-auto">
+    <NavLink to="/bio" className="block group mx-5 my-5 md:my-0">
+      <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] flex flex-row rounded-4xl h-auto w-auto">
         {/* Image Section */}
         <div className="w-1/2 p-5 flex justify-center items-center">
           <img
@@ -22,7 +22,7 @@ const ProfileCard = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-1/2 flex flex-col items-start pl-10 pt-10 pr-10 pb-5">
+        <div className="w-1/2 flex flex-col items-start pt-10 pr-10 pb-18">
           <h1 className="text-gray-600 text-4xl font-mono mb-10">Aditya Rai</h1>
           <h2
             className="flex items-center text-gray-400 mb-5 cursor-pointer"

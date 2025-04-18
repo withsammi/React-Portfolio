@@ -9,12 +9,13 @@ import {
 } from "react-router-dom";
 import Layout from "./Layout";
 import Hero from "./components/Hero/Hero";
-import Cv from "./components/Pages/Cv"; // Corrected the import path
+import Cv from "./components/Pages/Cv"; 
 import Bio from "./components/Bio/Bio";
 import Qualification from "./components/Qualification/Qualification";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Links from "./components/Links/Links";
+import Certificate from "./components/Certificate/Certificate";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="projects" element={<Projects />} />
       <Route path="Contact" element={<Contact />} />
       <Route path="Links" element={<Links />} />
+      <Route path="Certificate" element={<Certificate />} />
     </Route>
   )
 );

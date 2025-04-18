@@ -35,7 +35,7 @@ const Section3 = () => {
       </NavLink>
 
       {/* Collaborate Card */}
-      <div className="w-full md:w-1/3 bg-gradient-to-br from-[rgb(52,52,52)] to-[rgb(13,13,13)] rounded-4xl p-5 relative hover:cursor-grab">
+      <NavLink to='/Contact' className="w-full md:w-1/3 bg-gradient-to-br from-[rgb(52,52,52)] to-[rgb(13,13,13)] rounded-4xl p-5 relative hover:cursor-grab">
         <img
           src={Icon2}
           alt="Icon 2"
@@ -54,7 +54,7 @@ const Section3 = () => {
             />
           </div>
         </div>
-      </div>
+      </NavLink>
 
       {/* Profiles Card */}
       <div className="w-full md:w-1/3 bg-gradient-to-br from-[rgb(52,52,52)] to-[rgb(13,13,13)] rounded-4xl p-5 hover:cursor-grab">

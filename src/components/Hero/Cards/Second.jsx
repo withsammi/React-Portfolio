@@ -34,7 +34,7 @@ const Second = () => {
         </NavLink>
 
         {/* Second Icon Section */}
-        <div className="w-full md:w-1/2 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-4xl p-4 flex flex-col items-center group">
+        <NavLink to="/Projects" className="w-full md:w-1/2 bg-gradient-to-br from-[rgb(42,42,42)] to-[rgb(23,23,23)] rounded-4xl p-4 flex flex-col items-center group">
           <img
             src={PortfolioIcon}
             alt="Portfolio"
@@ -50,7 +50,7 @@ const Second = () => {
               className="w-15 h-15 ml-7 opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ease-in-out"
             />
           </div>
-        </div>
+        </NavLink>
       </div>
     </div>
   );

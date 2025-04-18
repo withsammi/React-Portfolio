@@ -66,7 +66,7 @@ const Projects = () => {
       id: 5,
       title: "Family Travel Tracker",
       description:
-        "Productivity application for managing tasks, projects, and deadlines with drag-and-drop interface",
+        "An application to track your visited Country",
       url: "",
       image: preview5,
       technologies: ["EJS", "PostgreSQL", "CSS", "Express"],
@@ -99,7 +99,7 @@ const Projects = () => {
     >
       <motion.h1
         ref={titleRef}
-        className="text-center text-4xl sm:text-5xl md:text-6xl invert mb-10 font-bold tracking-tight"
+        className="text-center text-4xl sm:text-5xl md:text-6xl invert mb-10 mask-linear-from-neutral-700 tracking-tight"
         onMouseEnter={projectsScramble.handleHover}
         initial={{ opacity: 0, y: -20 }}
         animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
@@ -108,7 +108,8 @@ const Projects = () => {
         {projectsScramble.text}
       </motion.h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 justify-items-center">
+
         {projects.map((project, index) => {
           const cardRef = useRef(null);
           const cardInView = useInView(cardRef, {
@@ -253,9 +254,7 @@ const Projects = () => {
         )}
       </AnimatePresence>
 
-      <div className="mt-12">
-        <CvCard />
-      </div>
+      
     </div>
   );
 };

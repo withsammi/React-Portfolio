@@ -16,7 +16,7 @@ const GithubCard = ({ repoCount, followers }) => {
         alt="Github"
         className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 filter invert opacity-50 group-hover:opacity-100 transition-all duration-300"
       />
-      <div className="flex justify-between w-full mt-4 md:mt-10">
+      <div className="flex justify-between w-full mt-5 md:mt-10">
         <div>
           <p className="text-gray-300 text-xs font-mono md:text-sm lg:text-base">
             REPOSITORY : {repoCount}

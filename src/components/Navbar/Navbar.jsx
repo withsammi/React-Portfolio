@@ -35,10 +35,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
-          <li className="flex justify-center items-center space-x-2 hover:text-amber-500">
-            <FaLink />
-            <span>Links</span>
-          </li>
+          
         </ul>
       )}
 

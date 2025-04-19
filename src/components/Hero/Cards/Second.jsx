@@ -10,7 +10,7 @@ const Second = () => {
     <div className="">
       <Marquee />
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <div className="flex mx-5 mb-5 flex-col md:flex-row justify-center items-center gap-5">
         {/* First Icon Section */}
         <NavLink
           to="/qualification" // Redirect to Qualification page

@@ -5,7 +5,7 @@ import Star from "../../../assets/Star.svg";
 const Marquee = () => {
   return (
     <div
-      className="bg-gradient-to-br from-[rgb(38,38,38)] to-[rgb(15,15,15)] text-center mb-6 py-3 rounded-4xl overflow-hidden"
+      className="bg-gradient-to-br from-[rgb(38,38,38)] to-[rgb(15,15,15)] text-center mb-5 mx-5 py-3 rounded-4xl overflow-hidden"
       style={{
         position: "relative",
         height: "50px",

@@ -19,7 +19,7 @@ const Center = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row w-full gap-4 md:gap-5 px-5 py-1"> {/* Adjusted to have padding of 1 on top and bottom, and 5 on left and right */}
+    <div className="flex flex-col md:flex-row w-full gap-4 md:gap-5 mb-5"> 
       <GithubCard repoCount={repoCount} followers={followers} />
 
       <div className="bg-gradient-to-br from-[rgb(32,32,32)] to-[rgb(23,23,23)] rounded-2xl md:rounded-4xl w-full md:w-3/5">

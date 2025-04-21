@@ -1,11 +1,10 @@
-
 import React from "react";
 import Star from "../../../assets/Star.svg";
 
 const Marquee = () => {
   return (
     <div
-      className="bg-gradient-to-br from-[rgb(38,38,38)] to-[rgb(15,15,15)] text-center mb-5 mx-5 py-3 rounded-4xl overflow-hidden"
+      className="bg-gradient-to-br from-[rgb(38,38,38)] to-[rgb(15,15,15)] text-center mb-5 mx-5 py-3 rounded-4xl overflow-clip"
       style={{
         position: "relative",
         height: "50px",
@@ -16,16 +15,16 @@ const Marquee = () => {
           display: "flex",
           whiteSpace: "nowrap",
           position: "absolute",
-          animation: "marquee 3s linear infinite",
+          animation: "marquee 5s linear infinite",
           width: "100%",
         }}
       >
-        {[...Array(6)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <h1
             key={i}
             className="pb-2 text-gray-500 text-l font-mono inline-block mb-1 mx-4"
           >
-            PERSONAL CV AND <span className="text-gray-300">PORTFOLIO</span>
+            Hey there visitor, Welcome to my PORTFOLIO
             <img
               src={Star}
               alt="Star"
@@ -40,7 +39,8 @@ const Marquee = () => {
             0% {
               transform: translateX(0);
             }
-            100% {
+             100% 
+             {
               transform: translateX(-50%);
             }
           }

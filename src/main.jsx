@@ -7,6 +7,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react"
 import Layout from "./Layout";
 import Hero from "./components/Hero/Hero";
 import Cv from "./components/Pages/Cv"; 
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+     <Analytics />
     <RouterProvider router={router} />
   </StrictMode>
 );

@@ -155,6 +155,20 @@ const Qualification = () => {
           <div className="mb-8">
             <div className="flex items-baseline">
               <p className="text-gray-400 text-base md:text-lg">
+                may 2025 - present
+              </p>
+            </div>
+            <h3 className="text-xl md:text-2xl text-blue-400 font-medium">
+              SDET
+            </h3>
+            <p className="text-gray-300 mt-1">Spyne.ai</p>
+            <p className="text-gray-300 leading-relaxed mt-3 text-base md:text-lg">
+              I Joined Spyne as a SDET in their studio team .
+            </p>
+          </div>
+          <div className="mb-8">
+            <div className="flex items-baseline">
+              <p className="text-gray-400 text-base md:text-lg">
                 aug 2024 - mar 2025
               </p>
             </div>

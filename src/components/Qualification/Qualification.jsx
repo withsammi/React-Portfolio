@@ -8,6 +8,7 @@ import leetcode from "../../assets/leetcode.svg";
 import { motion } from "framer-motion";
 import { centerVariants } from "../../Animations/motionVariants";
 import { useScrambleText } from "../../utils/useScrambleText";
+import { NavLink } from "react-router-dom";
 
 const Qualification = () => {
   // Create scramble text hooks for each skill with varied timing
@@ -105,13 +106,13 @@ const Qualification = () => {
           </a>
         </div>
         <div className="pb-6 px-6">
-          <a href="/contact">
+          <NavLink to="/contact">
             <div className="bg-gradient-to-br from-[rgb(52,52,52)] to-[rgb(13,13,13)] rounded-xl py-2 text-center transition-all duration-300 hover:from-white hover:to-gray-300 hover:text-black group">
               <span className="font-medium group-hover:font-semibold">
                 Contact
               </span>
             </div>
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className="w-full lg:w-2/3 text-white p-5 md:p-8 bg-transparent bg-opacity-10 backdrop-blur-sm rounded-3xl md:rounded-4xl">

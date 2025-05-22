@@ -26,6 +26,11 @@ const Section2 = () => {
           EXPERIENCE
         </h1>
         <div className="text-left p-5">
+          <h2 className="text-gray-400">May 2025 - PRESENT</h2>
+          <p className="text-white text-2xl">SDET</p>
+          <p className="text-gray-400">Spyne</p>
+        </div>
+        <div className="text-left p-5">
           <h2 className="text-gray-400">Aug 2024 - Mar 2025</h2>
           <p className="text-white text-2xl">Front-End Developer</p>
           <p className="text-gray-400 mb-6">Uniphil International</p>

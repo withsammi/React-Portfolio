@@ -32,7 +32,7 @@ const ProfileCard = () => {
             <img src={Code} alt="CODE" className="w-6 h-6 ml-2 filter invert" />
           </h2>
           <p className="text-gray-400 mb-5 font-mono">
-            Currently working on <span className="text-white">React</span> projects
+            Currently working with <span className="text-white">SPYNE</span> 
           </p>
           <div className="flex items-center text-white font-bold">
             <p className="text-gray-500 text-sm">Based in india</p>

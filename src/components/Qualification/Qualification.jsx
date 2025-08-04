@@ -160,11 +160,11 @@ const Qualification = () => {
               </p>
             </div>
             <h3 className="text-xl md:text-2xl text-blue-400 font-medium">
-              SDET
+              Software devveloper
             </h3>
             <p className="text-gray-300 mt-1">Spyne.ai</p>
             <p className="text-gray-300 leading-relaxed mt-3 text-base md:text-lg">
-              I Joined Spyne as a SDET in their studio team .
+              I Joined Spyne as a intern in their studio team .
             </p>
           </div>
           <div className="mb-8">

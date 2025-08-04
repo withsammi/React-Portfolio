@@ -27,7 +27,7 @@ const Section2 = () => {
         </h1>
         <div className="text-left p-5">
           <h2 className="text-gray-400">May 2025 - PRESENT</h2>
-          <p className="text-white text-2xl">SDET</p>
+          <p className="text-white text-2xl">SDE</p>
           <p className="text-gray-400">Spyne</p>
         </div>
         <div className="text-left p-5">
